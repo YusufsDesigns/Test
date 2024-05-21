@@ -1,9 +1,11 @@
 import Hero from "@/components/home/Hero";
 import SectionFive from "@/components/home/SectionFive";
 import SectionFour from "@/components/home/SectionFour";
+import SectionSeven from "@/components/home/SectionSeven";
+import SectionSix from "@/components/home/SectionSix";
 import SectionThree from "@/components/home/SectionThree";
 import SectionTwo from "@/components/home/SectionTwo";
-import Image from "next/image";
+import Footer from "@/components/shared/Footer";
 
 export default function Home() {
   return (
@@ -12,8 +14,11 @@ export default function Home() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
-      <hr />
+      <hr className="hidden md:block" />
       <SectionFive />
+      <SectionSix />
+      <SectionSeven />
+      <Footer />
     </main>
   );
 }

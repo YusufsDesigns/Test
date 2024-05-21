@@ -12,9 +12,10 @@ interface CardPropTypes{
     price: string
     sold: boolean
     classname?: string
+    cozy?: boolean
 }
 
-const Card = ({ image, name, collection, price, sold, classname }: CardPropTypes) => {
+const Card = ({ image, name, collection, price, sold, classname, cozy }: CardPropTypes) => {
     const parentVariants = {
         hover: { 
             transition: { 
@@ -48,6 +49,7 @@ const Card = ({ image, name, collection, price, sold, classname }: CardPropTypes
                 <Image src={image} alt={name} />
             </div>
             <div className='mt-3 text-[#13161a]'>
+                {cozy && <h3 className='text-[#333333]'>Cozy</h3>}
                 <h2 className='text-[18px] uppercase tracking-[0.09px]'>{name}</h2>
                 <p className='text-[#333333] text-[15px]'>{collection}</p>
                 <p className='mt-2'>{price}</p>

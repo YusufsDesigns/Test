@@ -15,3 +15,13 @@
   .bg-prodOne{
     background: url('/prod-1.jpg')no-repeat center center/cover;
   }
+
+  .bg-left-2{
+    background: url('/bg-left-2.jpg')no-repeat center center/cover;
+    transform-origin: right;
+  }
+
+  .bg-right-2{
+    background: url('/bg-right-2.jpg')no-repeat center center/cover;
+    transform-origin: right;
+  }
